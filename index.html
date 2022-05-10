@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Challenge 1: Encriptador de texto</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="panel-izquierdo">
+             <div id="logo">
+                <img src="IMAGENES/LOGO.png" alt="logo-Alura" class="img-logo">
+            </div>
+            <h1 class="titulo">Encriptador de texto</h1>
+            <input type="text" class="input-texto" id="txt-imput" placeholder="Ingrese el texto aquí">
+            <div class="botones">
+                <p id="advertencia">Sólo letras minúsculas. Sin acentos.</p>
+                <button type="button" id="btn-enc" class="botones-izq" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="btn-desenc" class="botones-izq" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="panel-derecho">
+            <img src="IMAGENES/Muñeco.png" alt="nuñeco-Alura" class="img-nene" id="imagenNene">
+            <h2 class="texto-derecha" id="titulo-derecha" >No se encontró ningún mensaje</h2>
+            <textarea class="texto-area" name="name" id="t-AreaDerecha" cols="30" rows="10">Ingrese el texto a encriptar o desencriptar</textarea>
+            <button type="button" id="btn-copiar" name="button" onclick="copiar()">Copiar</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="p-footer">Challenge | Oracle One | Sara Elisa Olivera 2022</p>  
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
